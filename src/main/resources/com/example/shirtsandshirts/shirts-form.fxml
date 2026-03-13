@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shirtsandshirts.FormController">
+   <children>
+      <Separator layoutX="-1.0" layoutY="43.0" mouseTransparent="true" prefHeight="15.0" prefWidth="400.0" />
+      <Label layoutX="31.0" layoutY="15.0" prefHeight="28.0" prefWidth="337.0" text="T-SHIRT ORDERING FORM">
+         <font>
+            <Font name="JetBrains Mono Bold Italic" size="19.0" />
+         </font></Label>
+      <Label layoutX="21.0" layoutY="60.0" prefHeight="25.0" prefWidth="91.0" text="First Name">
+         <font>
+            <Font name="JetBrains Mono Regular" size="15.0" />
+         </font></Label>
+      <Label layoutX="306.0" layoutY="62.0" prefHeight="21.0" prefWidth="83.0" text="Last Name">
+         <font>
+            <Font name="JetBrains Mono Regular" size="15.0" />
+         </font></Label>
+      <TextField fx:id="firstNameInput" layoutX="22.0" layoutY="85.0" promptText="Enter..." />
+      <TextField fx:id="lastNameInput" layoutX="235.0" layoutY="85.0" promptText="Enter..." />
+      <TextField fx:id="emailInput" layoutX="21.0" layoutY="217.0" prefHeight="25.0" prefWidth="350.0" promptText="Enter..." />
+      <TextField fx:id="phoneInput" layoutX="22.0" layoutY="147.0" promptText="Enter..." />
+      <TextField fx:id="addressInput" layoutX="234.0" layoutY="147.0" prefHeight="25.0" prefWidth="150.0" promptText="Enter..." />
+      <TextField fx:id="shirtInput" layoutX="28.0" layoutY="343.0" prefHeight="25.0" prefWidth="337.0" promptText="Enter..." />
+      <TextField fx:id="sizeInput" layoutX="308.0" layoutY="404.0" prefHeight="25.0" prefWidth="65.0" promptText="Enter..." />
+      <ComboBox fx:id="colorDropdown" layoutX="71.0" layoutY="404.0" prefWidth="150.0" promptText="Choose a color..." />
+      <ComboBox fx:id="paymentDropdown" layoutX="23.0" layoutY="500.0" prefWidth="150.0" promptText="Select Payment..." />
+      <ComboBox fx:id="deliveryInput" layoutX="221.0" layoutY="500.0" prefWidth="150.0" promptText="Select Delivery..." />
+      <Separator layoutX="60.0" layoutY="276.0" prefHeight="15.0" prefWidth="280.0" />
+      <Label layoutX="20.0" layoutY="123.0" prefHeight="21.0" prefWidth="116.0" text="Phone Number">
+         <font>
+            <Font name="JetBrains Mono Regular" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="313.0" layoutY="123.0" prefHeight="21.0" prefWidth="65.0" text="Address">
+         <font>
+            <Font name="JetBrains Mono Regular" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="187.0" prefHeight="25.0" prefWidth="126.0" text="Email Address">
+         <font>
+            <Font name="JetBrains Mono Regular" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="309.0" text="What shirt do you want to order?">
+         <font>
+            <Font name="JetBrains Mono Regular" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="11.0" layoutY="406.0" text="Color">
+         <font>
+            <Font name="JetBrains Mono Regular" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="252.0" layoutY="406.0" text="Size">
+         <font>
+            <Font name="JetBrains Mono Regular" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="460.0" text="Payment Method">
+         <font>
+            <Font name="JetBrains Mono Regular" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="229.0" layoutY="460.0" text="Delivery Method">
+         <font>
+            <Font name="JetBrains Mono Regular" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="submitButton" layoutX="155.0" layoutY="554.0" mnemonicParsing="false" onAction="#submitB" prefHeight="25.0" prefWidth="91.0" text="Submit Order" />
+   </children>
+</Pane>
